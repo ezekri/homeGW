@@ -92,16 +92,9 @@ class Polling:
 							Debug("-- Arming device " + str(dev) + " OK").write()
 						else:
 							Debug("-- Arming device " + str(dev) + " KO").write()	
-					url = "http://"+HCL_USER+":"+HCL_PASS+"@"+HCL_IP+"/api/sceneControl?id=4&action=start"
-					Debug("-- Arming motion and entry in progress...").write()
-					resp = self.getUrl(url)
-					Debug("-- HCL arming response status: " + (str(resp.status_code) if(resp is not None) else "None")).write()
-					if (resp and resp.ok):
-						Debug("-- Arming OK").write()
-						self.arme = 1
-						GP.output(11,True)	
-					else:
-						Debug("-- Arming KO").write()
+					self.arme = 1
+					GP.output(11,True)
+					Debug("-- Arming finished").write()	
 				else:
 					for dev in self.alarmDevices:
 						url = "http://"+HCL_USER+":"+HCL_PASS+"@"+HCL_IP+"/api/callAction?deviceID=" + str(dev) + "&name=setArmed&arg1=0&arg2=" + HCL_PIN
@@ -113,9 +106,6 @@ class Polling:
 						else:
 							Debug("-- Disarming device " + str(dev) + " KO").write()	
 					GP.output(11,False)
-					url = "http://"+HCL_USER+":"+HCL_PASS+"@"+HCL_IP+"/api/sceneControl?id=27&action=start"
-					Debug("-- Siren OFF").write()
-					resp = self.getUrl(url)
 					self.arme = 0
 					Debug("-- Disarming finished").write()
 					
