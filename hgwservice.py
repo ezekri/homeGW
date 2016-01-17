@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from nxp import *
+from hgwengine import *
 
 poll = Polling(1800,60,1)
 poll.start()
