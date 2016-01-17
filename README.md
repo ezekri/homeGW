@@ -14,6 +14,23 @@ nxppy : NXP-Explorer library (https://github.com/svvitale/nxppy)
 # Install
 git clone https://github.com/ezekri/homeGW.git
 
+# Configure global variables
+
+HCL_IP = Fibaro Home center IP address
+
+HCL_USER = Home Center user name
+
+HCL_PASS = Home center password
+
+HCL_PIN = Home center disarming pin code
+
+HCL_ARMED_VAR = global variable defined in HCL for arming status  
+
+HCL_ALARM_DEVICES = list of alarm devices
+
+HCL_ALL_DEVICES = list of all devices
+
+KNOWN_NFC_TAGS = list of nfc tags permitted to control alarm 
 
 # Configure startup service
 sudo cp homegw /etc/init.d/
