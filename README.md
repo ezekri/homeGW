@@ -5,7 +5,7 @@ Raspi home automation GateWay
 Control Fibaro Home Center Lite (HCL) security devices with NXP-Explore NFC controller 
 
 # The Project
-homeGW is the software for a DIY project described [here!](https://www.github.com)
+homeGW is the software for a DIY project described (in french) [here!](http://www.domotique-fibaro.fr/index.php/topic/7207-passerelle-nfc-pour-home-center/)
 
 
 # Dependencies
