@@ -38,6 +38,9 @@ KNOWN_NFC_TAGS = list of nfc tags permitted to control alarm
 HOMEGW_LOG_FILE = log file path
 
 # Configure startup service in Raspbian
+
+- edit homegw to define the right homeGW path in HOMEGW_PATH variable
+
 sudo cp homegw /etc/init.d/
 
 sudo chmod 755 /etc/init.d/homegw
