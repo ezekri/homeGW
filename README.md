@@ -39,7 +39,7 @@ HOMEGW_LOG_FILE = log file path
 
 # Configure startup service in Raspbian
 
-- edit homegw to define the right homeGW path in HOMEGW_PATH variable
+- edit homegw file and define the right homeGW path in HOMEGW_PATH variable
 
 sudo cp homegw /etc/init.d/
 
