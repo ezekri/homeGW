@@ -40,9 +40,9 @@ HOMEGW_LOG_FILE = log file path
 # Configure startup service in Raspbian
 sudo cp homegw /etc/init.d/
 
-chmod 755 /etc/init.d/homegw
+sudo chmod 755 /etc/init.d/homegw
 
-update-rc.d homegw defaults
+sudo update-rc.d homegw defaults
 
 # start/stop/status homegw
 sudo service homegw start
