@@ -15,6 +15,8 @@ Python requests : simple http [library](http://docs.python-requests.org/en/lates
 
 nxppy : [NXP-Explorer library](https://github.com/svvitale/nxppy)
 
+Enable SPI using raspi-config prior to installing nxppy
+
 
 # Install
 git clone https://github.com/ezekri/homeGW.git
