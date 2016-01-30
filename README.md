@@ -41,6 +41,8 @@ HOMEGW_LOG_FILE = log file path
 
 - edit homegw file and define the right homeGW path in HOMEGW_PATH variable
 
+From homeGW folder do this:
+
 chmod +x hgwservice.py
 
 sudo cp homegw /etc/init.d/
