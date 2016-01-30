@@ -11,6 +11,8 @@ homeGW is the software for a DIY project described (in french) [here!](http://ww
 # Dependencies
 RPi.GPIO : Rapsi GPIO library, by default installed in Raspbian
 
+Python requests : simple http [library](http://docs.python-requests.org/en/latest/user/install/)
+
 nxppy : [NXP-Explorer library](https://github.com/svvitale/nxppy)
 
 
